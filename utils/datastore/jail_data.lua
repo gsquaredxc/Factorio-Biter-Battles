@@ -253,17 +253,17 @@ local validate_args = function(data)
     end
 
     if jailed[player.name] and not player.admin then
-        Utils.print_to(player, 'You are jailed, you can´t run this command.')
+        Utils.print_to(player, "You are jailed, you can't run this command.")
         return false
     end
 
     if player.name == griefer and not player.admin then
-        Utils.print_to(player, 'You can´t select yourself.')
+        Utils.print_to(player, "You can't select yourself.")
         return false
     end
 
     if game.get_player(griefer).admin and not player.admin then
-        Utils.print_to(player, 'You can´t select an admin.')
+        Utils.print_to(player, "You can't select an admin.")
         return false
     end
 

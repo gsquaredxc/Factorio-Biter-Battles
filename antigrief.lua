@@ -481,7 +481,7 @@ local function on_gui_opened(event)
     end
 
     if player.name ~= corpse_owner.name then
-        Utils.action_warning('{Corpse}', player.name .. ' is looting ' .. corpse_owner.name .. '´s body.')
+        Utils.action_warning('{Corpse}', player.name .. ' is looting ' .. corpse_owner.name .. "'s body.")
         local data = {
             player_name = player.name,
             event = table.concat({ 'opened ', corpse_owner.name, ' body' }),
@@ -526,7 +526,7 @@ local function on_pre_player_mined_item(event)
         return
     end
     if player.name ~= corpse_owner.name then
-        Utils.action_warning('{Corpse}', player.name .. ' has looted ' .. corpse_owner.name .. '´s body.')
+        Utils.action_warning('{Corpse}', player.name .. ' has looted ' .. corpse_owner.name .. "'s body.")
         local data = {
             player_name = player.name,
             event = table.concat({ 'looted ', corpse_owner.name, ' body' }),

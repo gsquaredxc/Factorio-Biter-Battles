@@ -200,7 +200,7 @@ local save_logistics = Public.save_logistics
 local remove_quickbar = Public.remove_quickbar
 local remove_logistics = Public.remove_logistics
 
-commands.add_command('save-quickbar', 'Save your personal quickbar preset so it´s always the same.', function()
+commands.add_command('save-quickbar', "Save your personal quickbar preset so it's always the same.", function()
     local player = game.player
     if not player or not player.valid then
         return
@@ -218,7 +218,7 @@ commands.add_command('load-quickbar', 'Load your personal quickbar preset', func
     Sounds.notify_player(player, 'utility/armor_insert')
 end)
 
-commands.add_command('save-logistics', 'Save your personal logistics preset so it´s always the same.', function()
+commands.add_command('save-logistics', "Save your personal logistics preset so it's always the same.", function()
     local player = game.player
     if not player or not player.valid then
         return
